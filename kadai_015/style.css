@@ -1,0 +1,54 @@
+/* ルート要素のフォントサイズを設定 */
+html {
+    font-size: 20px;
+}
+
+/* body要素のフォント種類とテキストの中央寄せを設定 */
+body {
+    font-family: "Arial", "Meiryo", sans-serif;
+    text-align: center; /* すべてのテキストを中央寄せに */
+}
+
+/* h1要素の装飾 */
+h1 {
+    /* Googleフォント "Josefin Sans" を使用 */
+    font-family: "Josefin Sans", sans-serif;
+    /* ルート要素の2倍のフォントサイズ */
+    font-size: 2em;
+    /* 文字の大きさに対して1.2倍の文字間隔 */
+    letter-spacing: 1.2em;
+    /* 影の追加 (色、水平オフセット、垂直オフセット、ぼかし半径) */
+    text-shadow: 2px 2px 4px rgb(115, 115, 114);
+    /* 下線（ボーダーボトム）の追加 */
+    border-bottom: 3px solid rgb(115, 115, 114);
+}
+
+/* h1のMの文字色をスカイブルーに設定 */
+.blue {
+    color: skyblue;
+}
+
+/* h1のPの文字色をピンクに設定 */
+.pink {
+    color: rgb(255, 192, 203);
+}
+
+/* idがbasicのdivタグ内のh2要素にピンク色を適用 */
+/* これにより「名前」「血液型」「好きな食べ物」の見出しがピンクになります */
+#basic h2.pink,
+h2.pink {
+    color: rgb(255, 192, 203);
+}
+
+/* idがbasicのdivタグ内のh2要素にスカイブルーを適用 */
+/* これにより「生年月日」「趣味」「プログラミングを始めた理由」の見出しがスカイブルーになります */
+#basic h2.blue,
+h2.blue {
+    color: skyblue;
+}
+
+/* idがbasicのdivタグ内のp要素を太字に設定 */
+/* これにより「侍太郎」「1990年1月1日」「O型」が太字になります */
+#basic p {
+    font-weight: bold;
+}
