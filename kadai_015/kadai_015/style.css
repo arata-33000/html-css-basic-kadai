@@ -1,0 +1,48 @@
+/* ルート要素のフォントサイズを20pxにします。 */
+html {
+  font-size: 20px;
+}
+
+
+body {
+  /* bodyのフォント種類を、「"Arial", "Meiryo", sans-serif」 にします。 */
+    font-family: "Arial", "Meiryo",sans-serif;
+  /* テキストは、全て中央寄せにしてください。 */
+    text-align: center; 
+}
+
+/* h1のMの文字色をスカイブルーに設定 */
+/* 「生年月日」「趣味」「プログラミングを始めた理由」の見出しにはスカイブルー */
+.blue {
+    color: skyblue; /* キーワードでスカイブルーを指定 */
+}
+
+/* h1のPの文字色をピンクに設定 */
+/* 「名前」「血液型」「好きな食べ物」の見出しにはピンク */
+.pink {
+    color: rgb(255, 192, 203); /* RGB値でピンクを指定 */
+}
+
+/* 侍太郎」「1990年1月1日」「O型」を太字にしてください。 */
+#basic p {
+    font-weight: bold;
+}
+
+/* h1の装飾 */
+  h1 {
+    /* h1のフォントには、Googleフォント「Josefin Sans」 を使用してください。 */
+    /* h1の総称フォントは、「sans-serif」 を使用してください。 */
+      font-family: "Josefin Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    /* h1のフォントサイズは、ルート要素の2倍になるようにしてください。 */
+     font-size: 2em;
+    /* h1の文字間は、文字の大きさに対して1.2倍になるようにしてください。 */
+      letter-spacing: 1.2em;
+    /* h1に影を付けてください。 */
+      text-shadow: 2px 2px 4px rgb(115, 115, 114);
+    /* h1の下に3px（カラー：rgb(115, 115, 114)）の実線を付けてください。 */
+      border-bottom: 3px solid rgb(115, 115, 114);
+  }
+  
