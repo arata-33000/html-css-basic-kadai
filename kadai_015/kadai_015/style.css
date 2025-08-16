@@ -37,7 +37,7 @@ body {
       font-weight: <weight>;
       font-style: normal;
     /* h1のフォントサイズは、ルート要素の2倍になるようにしてください。 */
-     font-size: 2em;
+     font-size: 2rem;
     /* h1の文字間は、文字の大きさに対して1.2倍になるようにしてください。 */
       letter-spacing: 1.2em;
     /* h1に影を付けてください。 */
