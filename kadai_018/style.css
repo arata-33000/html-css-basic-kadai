@@ -1,0 +1,70 @@
+/* Step 3: 一番上の図形へのスタイル適用 */
+/* div要素（id名「top」）に対する装飾 */
+#top {
+  width: 800px;               /* 横幅を800pxにします。*/
+  background-color: #dcc9f4;/* 背景色を「 #dcc9f4」にします。*/
+  margin: 20px auto;          /* 上下に20pxの余白を入れて、画面の中央に配置します。*/
+  text-align: center;         /* 中にあるp要素が中央揃えになるようにします。*/
+} 
+/* p要素（class名「top-child」）に対する装飾 */
+.top-child {
+  width: 20%;                 /* 横幅を親要素の20%になるようにします。*/
+  background-color: #ffd9df;/* 背景色を「#ffd9df」にします。*/
+  display: inline-block;      /* 3つのp要素が横並びになるようにします。*/
+}
+
+/* Step 4: 真ん中の図形へのスタイル適用 */
+/* Step4-1. 真ん中の図形のデザインを調整 */
+/* div要素（id名「middle」）に対する装飾 */
+#middle {
+  width: 800px;               /* 横幅を800pxにします。*/
+  height: 800px;              /* 高さを800pxにします。*/
+  margin: 20px auto;          /* 上下に20pxの余白を入れて、画面の中央に配置します*/
+  background-color: #ffd9df;/* 背景色を「#ffd9df 」にします。*/
+  position: relative;         /* 親要素の基準を設定*/
+}
+#middle-child01,#middle-child02,#middle-child03/* div要素（id名「middle-child01」「middle-child02」「middle-child03」）に対する共通の装飾 */
+{
+  width: 200px;               /* 横幅を200pxにします。*/
+  height: 200px;              /* 高さを200pxにします。*/
+  background-color: #87ceeb;/* 背景色を「#87ceeb」にします。*/
+  position: absolute;         /* 親要素の基準をもとに子要素を配置*/
+}
+/* Step4-2. 真ん中の図形の位置を指定 */
+#middle-child01 {             /* id名「middle-child01」）は、親要素のdiv要素（id名「middle」）の上から100px、左から100px距離を取った場所に配置してください。 */
+  top: 100px;
+  left: 100px;
+}
+#middle-child02 {             /* id名「middle-child02」）は、親要素のdiv要素（id名「middle」）の上から300px、左から300px距離を取った場所に配置してください。 */
+  top: 300px;
+  left: 300px;
+}
+#middle-child03 {             /* id名「middle-child03」）は、親要素のdiv要素（id名「middle」）の上から500px、左から500px距離を取った場所に配置してください。*/
+  top: 500px;
+  left: 500px;
+}
+
+/* Step 5: 一番下の図形へのスタイル適用 */
+/* Step5-1. 一番下の図形のデザインを調整 */
+/* div要素（id名「bottom」）に対する装飾 */
+#bottom {
+  width: 800px;               /* 横幅を800pxにします。*/
+  height: 300px;              /* 高さを300pxにします。*/
+  margin: 0 auto;             /* 画面の中央に配置します。*/
+  background-color: #87ceeb;/* 背景色を「#87ceeb」にします。*/
+}
+/* div要素（id名「bottom-child01」「bottom-child02」「bottom-child03」）に対する共通の装飾 */
+#bottom-child01,#bottom-child02,#bottom-child03 
+{
+  width: 400px;               /* 横幅を400pxにします。*/
+  height: 100px;              /* 高さを100pxにします。*/
+  background-color: #e5dcf0;/* 背景色を「#e5dcf0」にします。*/
+}
+#bottom-child02 {
+  position: relative;         /* 本来の表示位置を基準 */
+  left: 200px;                /* div要素（id名「bottom-child02」）は、本来の表示場所の左から200pxずらして配置してください。 */
+}
+#bottom-child03 {
+  position: relative;         /* 本来の表示位置を基準 */
+  left: 400px;                /* div要素（id名「bottom-child03」）は、本来の表示場所の左から400pxずらして配置してください。 */
+}
