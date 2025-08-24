@@ -1,0 +1,95 @@
+/* Step3. スタイルの下準備 */
+h1,
+p,
+body {
+  margin: 0; /* h1、p、body要素の上下左右余白（margin）を0にしてください。 */
+}
+
+p,
+a {
+  font-size: 20px; /* 記事内全てのp要素とa要素のフォントサイズを20pxとします。 */
+}
+
+/* Step4. header部分のスタイル */
+header {
+  margin-bottom: 20px; /* 下の余白を20pxにします。 */
+  background-color: rgb(244, 79, 79); /* 背景色を「 rgb(244, 79, 79)」にします。 */
+  text-align: center; /* 中の要素が中央揃えになるようにします。 */
+}
+
+header h1 {
+  color: rgb(255, 255, 255); /* 文字色をrgb(255, 255, 255)にします。 */
+}
+
+/* Step5. main部分のスタイル */
+main {
+  padding: 10px; /* main要素内の余白を上下左右とも10pxにします。 */
+}
+
+#parent {
+  display: flex; /* displayプロパティを使い、id名parentの要素をFlexコンテナにします。 */
+  justify-content: space-around; /* justify-contentプロパティでFlexboxコンテナの子要素（Flexアイテム）「一番左と一番右のアイテムも含め、均等な間隔で配置する」値を設定します。 */
+}
+
+.contents {
+  border: 3px solid rgb(238, 204, 204); /* 線（太さ3px、実線、色rgb(238, 204, 204)）で要素を囲います。 */
+  flex-basis: 25%; /* 幅は親要素の25%にします。 */
+  padding: 10px 15px; /* 要素内の余白は上下10px、左右15pxにします。 */
+  margin: 20px 0; /* 要素外の余白は上下20px、左右0にします。 */
+  text-align: center; /* 中の要素が中央揃えになるようにします。 */
+}
+
+h2 {
+  font-size: 25px; /* h2要素のフォントサイズを25px */
+  border-bottom: 3px dotted rgb(236, 122, 122); /* 下線（太さ3px、点線、色rgb(236, 122, 122)）を引きます。 */
+}
+
+h2::before {
+  content: '●'; /* h2要素の前に「●」記号を表示します。 */
+  color: rgb(239, 111, 139); /* 色はrgb(239, 111, 139)とします。 */
+}
+
+.contents p:nth-of-type(2)::first-letter {
+  font-weight: bold; /* 太字 */
+  color: rgb(97, 206, 249); /* 文字色はrgb(97, 206, 249) */
+}
+
+.contents img {
+  margin: 10px 0; /* marginは上下10px、左右0 */
+  width: 70%; /* 幅は70% */
+}
+
+/* Step6. フッター部分のスタイル */
+footer {
+  background-color: rgb(244, 79, 79); /* 背景色はrgb(244, 79, 79)にします。 */
+  text-align: center; /* 中身の要素が中央揃えになるようにします。 */
+}
+
+footer a {
+  color: rgb(255, 255, 255); /* 文字色はrgb(255, 255, 255)にします。 */
+}
+
+/* 訪問済みリンクのスタイル */
+footer a:visited {
+  color: rgb(193, 234, 251); /* 訪問済みリンクの文字色がrgb(193, 234, 251)に変化するようにします。 */
+}
+
+/* マウスホバー時のスタイル */
+footer a:hover {
+  color: rgb(245, 178, 168); /* マウスカーソルが乗ると文字色がrgb(245, 178, 168)に変化するようにします。 */
+}
+
+/* Step7. レスポンシブ対応のスタイル */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px; /* h2のフォントサイズは30pxとします。 */
+  }
+
+  p {
+    font-size: 25px; /* pのフォントサイズは25pxとします。 */
+  }
+
+  #parent {
+    flex-direction: column; /* Flexboxコンテナであるid名parent内の要素が縦に並ぶようにします。 */
+  }
+}
